@@ -55,6 +55,11 @@
     # 定义IP值到整数的转换函数
     def ip2int(ip):
         return int(''.join(ipnumber2bin(int(num)) for num in ip.strip().split(".")), 2)
+
+
+    # 当然，使用python标准库ipaddress能更加快捷方便的处理这个问题
+    form ipaddress import ip_address
+    int(ip_address("10.3.9.12"))
     ```
 
 3. python递归最大层数？
